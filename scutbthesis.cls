@@ -1,4 +1,4 @@
-\ProvidesClass{bscutthesis}[2019/4/12 hqyyqh]
+\ProvidesClass{scutbthesis}
 \LoadClass[a4paper]{article}
 
 %----------------------------------------------------------------------------------------
