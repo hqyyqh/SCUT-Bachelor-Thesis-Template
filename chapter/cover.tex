@@ -29,14 +29,33 @@
 \begin{spacing}{1.8}
 \begin{center}
  \zihao{-3}
+%  \begin{tabular}{c @{ : } c }
+%  	\textbf{学 \quad\quad 院} & xxxxxxxx学院 \\ \cline{2-2}
+%  	\textbf{专 \quad\quad 业} & xxxxxxx \\ \cline{2-2}
+%  	\textbf{学生姓名} & xxx \\ \cline{2-2}
+%  	\textbf{学生学号} & xxxxxxxxxx  \\ \cline{2-2}
+%  	\textbf{指导老师} & xxx	 \\ \cline{2-2}
+%  	\textbf{提交日期} & xxxx 年 x 月 x 日 \\ \cline{2-2}
+%  \end{tabular}
+
+% 改用 \makebox 进行分散对齐，参考 https://blog.csdn.net/RobertChenGuangzhi/article/details/50467450 以及 https://zhuanlan.zhihu.com/p/24339981
+% 1em 表示当前字体尺寸。4em 即为四个字的大小。如果发现文字溢出，修改 \makebox[xem] 即可
+
  \begin{tabular}{c @{ : } c }
- 	\textbf{学 \quad\quad 院} & xxxxxxxx学院 \\ \cline{2-2}
- 	\textbf{专 \quad\quad 业} & xxxxxxx \\ \cline{2-2}
- 	\textbf{学生姓名} & xxx  \\ \cline{2-2}
- 	\textbf{学生学号} & xxxxxxxxxx  \\ \cline{2-2}
- 	\textbf{指导老师} & xxx	 \\ \cline{2-2}
- 	\textbf{提交日期} & xxxx 年 x 月 x 日 \\ \cline{2-2}
- \end{tabular}
+	\makebox[4em][s]{\textbf{学 \hspace{\fill} 院}} & \makebox[10em][c]{xxxxxxxx学院 } 
+		\\ \cline{2-2}
+	\makebox[4em][s]{\textbf{专 \hspace{\fill} 业}} & \makebox[10em][c]{xxxxxxx}
+		\\ \cline{2-2}
+	\makebox[4em][s]{\textbf{学生姓名}}             & \makebox[10em][c]{xxx} 
+		\\ \cline{2-2}
+	\makebox[4em][s]{\textbf{学生学号}}             & \makebox[10em][c]{xxxxxxxxxx} 
+		\\ \cline{2-2}
+	\makebox[4em][s]{\textbf{指导老师}}             & \makebox[10em][c]{xxx}	 
+		\\ \cline{2-2}
+	\makebox[4em][s]{\textbf{提交日期}}             & \makebox[10em][c]{xxxx 年 x 月 x 日} 
+		\\ \cline{2-2}
+\end{tabular}
+
 \end{center}
 \end{spacing}
 \pagebreak[4]
