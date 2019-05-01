@@ -9,6 +9,12 @@
 \setCJKmainfont[BoldFont={SimHei},ItalicFont={SimHei}]{宋体}
 \setmainfont{Times New Roman}
 \setsansfont{Arial}
+
+%----------------------------------------------------------------------------------------
+%   GB/T 7714-2015 BibTeX Style https://github.com/CTeX-org/gbt7714-bibtex-style
+%----------------------------------------------------------------------------------------
+\RequirePackage{gbt7714}
+
 %----------------------------------------------------------------------------------------
 \RequirePackage[fntef]{ctexcap} % Required for the Chinese and the corresponding section setting
 \RequirePackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry} % Required for the Word-like page
@@ -32,7 +38,8 @@
 \RequirePackage[usenames,dvipsnames]{color} % Required for custom colors
 \RequirePackage{courier} % Required for the courier font
 \RequirePackage[font=footnotesize,tableposition=top]{caption} % Required for the footnote size captions of figures and tables
-\RequirePackage[numbers,sort&compress]{natbib}
+\RequirePackage{natbib}
+\setcitestyle{numbers,sort&compress}
 
 %   Math Display
 %----------------------------------------------------------------------------------------
