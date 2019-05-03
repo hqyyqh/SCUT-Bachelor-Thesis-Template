@@ -14,6 +14,7 @@
 %   GB/T 7714-2015 BibTeX Style https://github.com/CTeX-org/gbt7714-bibtex-style
 %----------------------------------------------------------------------------------------
 \RequirePackage{gbt7714}
+\renewcommand\refname {参考文献}
 
 %----------------------------------------------------------------------------------------
 \RequirePackage[fntef]{ctexcap} % Required for the Chinese and the corresponding section setting
