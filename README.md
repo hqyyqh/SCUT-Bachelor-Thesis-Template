@@ -4,5 +4,7 @@ Latex template for the bachelor graduation thesis of South China University of T
 原模板出处[OChicken](https://github.com/OChicken/SCUT-Bachelor-Thesis-Template)，做了一点修改方便使用。
 
 > WIN10
+>
 > TexLive 2018
+>
 > XeLaTeX -> BibTex -> XeLaTeX*2
