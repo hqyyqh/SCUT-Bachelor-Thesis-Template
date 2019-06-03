@@ -38,7 +38,7 @@
 %\RequirePackage{cite} % Required for the ref and cite
 \RequirePackage[usenames,dvipsnames]{color} % Required for custom colors
 \RequirePackage{courier} % Required for the courier font
-\RequirePackage[font=footnotesize,tableposition=top]{caption} % Required for the footnote size captions of figures and tables
+\RequirePackage[font=normal,tableposition=top]{caption} % Required for the footnote size captions of figures and tables
 \RequirePackage{natbib}
 \setcitestyle{numbers,sort&compress}
 
@@ -108,7 +108,9 @@ stepnumber=1 % Line numbers go in steps of 1
 \makeatletter
 \@addtoreset{equation}{section}
 \makeatother
-\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\numberwithin{equation}{section}
+\numberwithin{table}{section}
+\numberwithin{figure}{section}
 
 %----------------------------------------------------------------------------------------
 %   Chapter & Section fonts adjustment
