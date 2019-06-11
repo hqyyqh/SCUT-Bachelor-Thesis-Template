@@ -40,6 +40,7 @@
 \RequirePackage{courier} % Required for the courier font
 \RequirePackage[font=normal,tableposition=top,labelsep=space]{caption} % Required for the footnote size captions of figures and tables
 \RequirePackage{natbib}
+\setlength{\bibsep}{0.0pt}  % 去掉参考文献段落间空白
 \setcitestyle{numbers,sort&compress}
 
 %   Math Display
