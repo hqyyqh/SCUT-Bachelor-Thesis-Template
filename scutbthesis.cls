@@ -110,6 +110,7 @@ stepnumber=1 % Line numbers go in steps of 1
 \@addtoreset{table}{section}
 \@addtoreset{figure}{section}
 \makeatother
+\renewcommand\p@subfigure{\thefigure}
 \renewcommand{\theequation}{\arabic{section}-\arabic{equation}}
 \renewcommand{\thetable}{\arabic{section}-\arabic{table}}
 \renewcommand{\thefigure}{\arabic{section}-\arabic{figure}}
