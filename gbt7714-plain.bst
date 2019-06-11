@@ -54,9 +54,9 @@ FUNCTION {load.config}
   #0 'in.booktitle :=
   #0 'italic.jounal :=
   #0 'bold.journal.volume :=
-  #1 'show.missing.address.publisher :=
-  #1 'show.url :=
-  #1 'show.doi :=
+  #0 'show.missing.address.publisher :=
+  #0 'show.url :=
+  #0 'show.doi :=
   #0 'show.note :=
   #1 'lang.zh.order :=
   #2 'lang.ja.order :=
